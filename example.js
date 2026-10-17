@@ -12,3 +12,19 @@ console.log(`Fun: ${fun}`);
 console.log(`Fun had: ${funHad}`);
 
 console.log(`Had fun: ${hadFun}`);
+
+const counter = document.querySelector('.counter')
+
+const counterDisplay = document.querySelector('.counter-display')
+
+let counterNumber = 0
+
+counter.addEventListener("click" , increaseCounter)
+
+function increaseCounter(){
+
+    counterNumber++
+
+    counterDisplay.innerText = counterNumber
+    
+}
